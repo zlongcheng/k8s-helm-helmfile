@@ -14,5 +14,5 @@ kubectl delete deployments.apps postgres
 kubectl delete configmaps postgres-config
 # delete persistent volume claim
 kubectl delete pvc postgres-persistent-volume-claim
-# delete namespace ingress-nginx (Ingress Controller) 
-kubectl delete namespaces ingress-nginx
+# delete ingress
+kubectl delete ingresses.networking.k8s.io ingress-service
